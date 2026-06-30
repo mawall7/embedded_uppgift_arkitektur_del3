@@ -195,7 +195,7 @@ void app_run(void)
             break;
 
         case SENT_UID:
-            uint16_t sid;
+            //uint16_t sid;
             s = access_read_message(&msg); 
         
             if ((millis_t)(millis_get() - uidresp_time) > 5000){ STATE = SERVER_NO_RESPONSE; break;}
